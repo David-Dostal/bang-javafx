@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:id="pane" prefHeight="1024.0" prefWidth="1024.0" stylesheets="@../../../../resources/styles.css"
+            maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="cz.mendelu.pjj.bang.MainMenuController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <children>
+        <VBox alignment="CENTER" layoutX="-7.0" layoutY="-6.0" prefHeight="676.0" prefWidth="1053.0" spacing="20.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fx:id="logoIV" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true"
+                           x="568.0" y="35.0">
+                    <image>
+                        <Image url="@../../../../resources/UI/bang_logo.png"/>
+                    </image>
+                </ImageView>
+
+                <Label fx:id="playerCountLB" alignment="CENTER" prefHeight="88.0" prefWidth="316.0" text="Počet hráčů"
+                       textFill="#f8f8f8">
+                    <font>
+                        <Font size="36.0"/>
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="gameModeCB" prefWidth="150.0"/>
+                <Button fx:id="startGameBT" mnemonicParsing="false" onAction="#startGame" text="START"/>
+                <Label fx:id="chooseGameModeLB" textFill="#bf0000"/>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

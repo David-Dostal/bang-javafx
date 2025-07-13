@@ -1,0 +1,1 @@
+--module-path "Z:\EBC-PJ\projekt\Bang\lib" --add-modules javafx.controls,javafx.fxml
